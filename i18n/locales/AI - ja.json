@@ -1,0 +1,983 @@
+{
+    "about": {
+        "description": {
+            "primary": "ChatterUIは、Vali-98が開発した無料のオープンソースアプリです",
+            "support": "このアプリは、私が空き時間に情熱を注いで開発しているプロジェクトです。気に入っていただけたら、開発の支援をご検討ください！"
+        },
+        "devMode": {
+            "disableAction": "開発者モードを無効にする",
+            "disabledMessage": "開発者モードを無効にしました。",
+            "enabledMessage": "開発者モードを有効にしました。"
+        },
+        "logsReminder": "ログを必ず添付してください",
+        "reportIssue": "問題がありましたか？こちらから報告してください：",
+        "support": {
+            "button": "ChatterUIを支援する",
+            "label": "ChatterUIへの寄付はこちら："
+        },
+        "versionPrefix": "v"
+    },
+    "appMode": {
+        "options": {
+            "local": "ローカル",
+            "remote": "リモート"
+        },
+        "title": "アプリモード"
+    },
+    "auth": {
+        "authorizationRequired": "認証が必要です"
+    },
+    "authorNotes": {
+        "alert": {
+            "delete": {
+                "button": "ノートを削除",
+                "description": "{{name}} を削除しますか？この操作は元に戻せません。",
+                "title": "ノートを削除"
+            }
+        },
+        "empty": "ノートがありません",
+        "errors": {
+            "create": "ノートの作成に失敗しました"
+        },
+        "item": {
+            "comments": "コメント",
+            "content": "ノートの内容",
+            "depth": "深さ",
+            "noContent": "内容がありません",
+            "priority": "優先度"
+        },
+        "selector": {
+            "character": "キャラクター",
+            "chat": "チャット",
+            "global": "全体"
+        },
+        "type": "ノートの種類",
+        "unsavedChanges": {
+            "description": "保存されていない変更があります。終了すると、すべての変更が取り消されます。",
+            "discard": "変更を破棄",
+            "title": "未保存の変更"
+        }
+    },
+    "character": {
+        "editor": {
+            "actions": {
+                "changeBackground": "背景を変更",
+                "changeImage": "画像を変更",
+                "export": "エクスポート",
+                "manageLinks": "リンクを管理",
+                "removeBackground": "背景を削除",
+                "viewImage": "画像を表示"
+            },
+            "dialogs": {
+                "clone": {
+                    "confirm": "キャラクターを複製",
+                    "description": "'{{name}}' を複製しますか？",
+                    "title": "キャラクターを複製"
+                },
+                "deleteAlternateMessage": {
+                    "confirm": "削除",
+                    "description": "この代替メッセージを削除しますか？この操作は元に戻せません。",
+                    "title": "代替メッセージを削除"
+                },
+                "deleteCharacter": {
+                    "confirm": "キャラクターを削除",
+                    "description": "'{{name}}' を削除しますか？この操作は元に戻せません。",
+                    "title": "キャラクターを削除"
+                },
+                "deleteImage": {
+                    "confirm": "画像を削除",
+                    "description": "この画像を削除しますか？この操作は元に戻せません。",
+                    "title": "画像を削除"
+                },
+                "unsavedChanges": {
+                    "description": "保存されていない変更があります。今離れると、作業内容が破棄されます。",
+                    "discard": "変更を破棄",
+                    "title": "未保存の変更"
+                }
+            },
+            "emptyStates": {
+                "noAlternateGreetings": "代替あいさつがありません"
+            },
+            "errors": {
+                "cardNoCharacter": "キャラクターが見つかりませんでした。",
+                "copyCardNotExist": "カードのコピーに失敗しました：カードが存在しません",
+                "createFailed": "キャラクターの作成に失敗しました",
+                "createFromImage": "カードの作成に失敗しました - 画像を取得できませんでした",
+                "deleteBackground": "背景の削除に失敗しました",
+                "export": "エクスポートできませんでした：{{error}}",
+                "exportFailed": "エクスポートに失敗しました",
+                "failedToCopyCard": "カードのコピーに失敗しました",
+                "invalidCharacterCard": "無効なキャラクターカードです",
+                "v2ParsingFailedFallingBack": "V2の解析に失敗したため、V1に切り替えます"
+            },
+            "fields": {
+                "alternateGreeting": "代替あいさつ",
+                "exampleMessages": "メッセージ例",
+                "firstMessage": "最初のメッセージ",
+                "personality": "性格",
+                "scenario": "シナリオ",
+                "tags": "タグ"
+            },
+            "links": {
+                "description": "このキャラクターを読み込むと、リンクされた設定も自動的に読み込まれます",
+                "loadConnection": "インデックス {{value}} の接続を読み込み中",
+                "loadInstruct": "ID {{value}} のインストラクトを読み込み中",
+                "loadModel": "ID {{value}} のモデルを読み込み中",
+                "loadSampler": "インデックス {{value}} のサンプラーを読み込み中",
+                "loadUser": "ID {{value}} のユーザーを読み込み中",
+                "missingConnection": "リンクされた接続がありません",
+                "missingInstruct": "リンクされた書式設定がありません",
+                "missingModel": "リンクされたモデルがありません",
+                "missingSampler": "リンクされたサンプラーがありません",
+                "missingUser": "リンクされたユーザーがありません"
+            },
+            "messages": {
+                "deleted": "キャラクターを削除しました：{{name}}",
+                "exported": "カードをエクスポートしました！",
+                "saved": "カードを保存しました！"
+            },
+            "metrics": {
+                "descriptionTokens": "説明のトークン数：{{count}}"
+            },
+            "title": "キャラクターエディター"
+        },
+        "list": {
+            "actions": {
+                "createCharacter": "キャラクターを作成",
+                "createNewCharacter": "新しいキャラクターを作成",
+                "importFromFile": "ファイルからインポート"
+            },
+            "columns": {
+                "name": "名前"
+            },
+            "emptyStates": {
+                "noCharactersFound": "キャラクターが見つかりません。インポートしてみましょう！",
+                "noCharactersMatch": "検索に一致するキャラクターがありません",
+                "noMessages": "メッセージがありません"
+            },
+            "errors": {
+                "chatCreationFailed": "チャット作成のバックアップに失敗しました！報告してください。",
+                "load": "キャラクターを読み込めませんでした：{{error}}",
+                "nameCannotBeEmpty": "名前を空にすることはできません",
+                "nameEmpty": "名前を空にすることはできません！"
+            },
+            "messages": {
+                "hiderDisabled": "非表示機能をオフにしました",
+                "hiderEnabled": "非表示機能をオンにしました"
+            },
+            "search": {
+                "byName": "名前で検索",
+                "byTags": "タグで検索"
+            },
+            "sort": {
+                "label": "並べ替え",
+                "recent": "最近"
+            }
+        }
+    },
+    "chat": {
+        "bubble": {
+            "promptSpeed": "プロンプト：{{tokens}} t/s | {{seconds}}秒",
+            "textGenerationSpeed": "    テキスト生成：{{tokens}} t/s | {{seconds}}秒"
+        },
+        "drawer": {
+            "actions": {
+                "startNewChat": "新しいチャットを開始"
+            },
+            "dialogs": {
+                "clone": {
+                    "confirm": "チャットを複製",
+                    "description": "'{{name}}' を複製しますか？",
+                    "title": "チャットを複製"
+                },
+                "delete": {
+                    "confirm": "チャットを削除",
+                    "description": "'{{name}}' を削除しますか？この操作は元に戻せません。",
+                    "title": "チャットを削除"
+                }
+            },
+            "errors": {
+                "defaultChatFailed": "デフォルトのチャットの作成中に問題が発生しました",
+                "exportFailed": "チャットのエクスポートに失敗しました",
+                "undefinedChat": "チャットが未定義です"
+            },
+            "labels": {
+                "unknown": "不明"
+            },
+            "messages": {
+                "exported": "ファイル {{name}} をダウンロードフォルダに保存しました！"
+            },
+            "rename": {
+                "errors": {
+                    "nameCannotBeEmpty": "名前を空にすることはできません"
+                }
+            },
+            "search": {
+                "errors": {
+                    "queryFailed": "チャット検索に失敗しました：{{error}}"
+                },
+                "noResults": "結果がありません",
+                "placeholder": "メッセージを検索...",
+                "resultsFound": "結果：{{count}}件",
+                "title": "検索"
+            },
+            "title": "チャット",
+            "user": {
+                "alreadySet": "このユーザーはすでに設定されています",
+                "linkAction": "ユーザーをリンク",
+                "linked": "ユーザー {{name}} にリンクしました",
+                "noneSelected": "現在のユーザーがいません"
+            }
+        },
+        "editor": {
+            "actions": {
+                "confirm": "確認",
+                "delete": "削除",
+                "reset": "リセット"
+            }
+        },
+        "filteredText": {
+            "hide": "フィルター済みを隠す",
+            "show": "フィルター済みを表示"
+        },
+        "footer": {
+            "emptyState": {
+                "sendMessageToBegin": "メッセージを送信して開始",
+                "startOfChat": "チャットの始まり"
+            }
+        },
+        "frame": {
+            "entryNumber": "#{{index}}",
+            "seconds": "{{seconds}}秒"
+        },
+        "import": {
+            "errors": {
+                "failedToImport": "インポートに失敗しました",
+                "noChatCharacter": "キャラクターもユーザーもないチャットをインポートしようとしています"
+            }
+        },
+        "input": {
+            "actions": {
+                "addImage": "画像を追加",
+                "authorNotes": "作者ノート",
+                "chatHistory": "チャット履歴",
+                "editCharacter": "キャラクターを編集",
+                "mainMenu": "キャラクター一覧",
+                "takePicture": "写真を撮る"
+            },
+            "errors": {
+                "abortGeneration": "生成を中止しています",
+                "failedToSend": "メッセージの送信に失敗しました",
+                "permissionDescription": "添付ファイルを追加するには、メディアへのアクセス許可が必要です"
+            },
+            "message": "メッセージ...",
+            "noConnection": "有効な接続がありません",
+            "noModelLoaded": "モデルが読み込まれていません"
+        },
+        "model": {
+            "noModelLoaded": "モデルが読み込まれていません"
+        },
+        "quickActions": {
+            "createNote": {
+                "button": "ノートを作成",
+                "description": "このメッセージから作者ノートを作成しますか？",
+                "title": "ノートを作成"
+            },
+            "errors": {
+                "cloneFailed": "チャットの複製に失敗しました",
+                "copyFailed": "クリップボードへのコピーに失敗しました",
+                "noteCreateFailed": "ノートの作成に失敗しました"
+            },
+            "fork": {
+                "button": "チャットを分岐",
+                "description": "このメッセージ以降からチャットの複製を作成します",
+                "title": "チャットを分岐"
+            },
+            "messages": {
+                "copied": "コピーしました"
+            },
+            "toast": {
+                "copiedCode": "コードをコピーしました",
+                "copyFailed": "クリップボードへのコピーに失敗しました"
+            }
+        },
+        "state": {
+            "failedToLoad": "チャット {{id}} の読み込みに失敗しました"
+        },
+        "tokencount": {
+            "title": "コンテキスト上限",
+            "used": "使用量 {{used}} / 最大 {{max}}"
+        }
+    },
+    "common": {
+        "actions": {
+            "add": "追加",
+            "back": "戻る",
+            "cancel": "キャンセル",
+            "clone": "複製",
+            "close": "閉じる",
+            "create": "作成",
+            "delete": "削除",
+            "disable": "無効にする",
+            "discard": "破棄",
+            "discardChanges": "変更を破棄",
+            "edit": "編集",
+            "enable": "有効にする",
+            "export": "エクスポート",
+            "link": "リンク",
+            "more": "もっと見る",
+            "rename": "名前を変更",
+            "reset": "リセット",
+            "save": "保存",
+            "search": "検索",
+            "select": "選択",
+            "test": "テスト",
+            "tryAgain": "もう一度試す"
+        },
+        "alert": {
+            "unsaved": {
+                "description": "保存されていない変更があります。終了すると、すべての変更が破棄されます。",
+                "title": "未保存の変更"
+            }
+        },
+        "brand": {
+            "name": "ChatterUI"
+        },
+        "emptyStates": {
+            "noItems": "項目がありません"
+        },
+        "errors": {
+            "couldNotGetData": "データを取得できませんでした。重大な問題が発生しています！",
+            "failedToCopy": "コピーに失敗しました",
+            "failedToCreateData": "データの作成に失敗しました",
+            "fileInvalid": "ファイルが無効です",
+            "filenameInvalidImportFailed": "ファイル名が無効なため、インポートに失敗しました",
+            "invalidFileType": "無効なファイル形式です！",
+            "permissionRequired": "許可が必要です",
+            "rollingBackDueToError": "エラーのため元の状態に戻しています",
+            "schemaValidationFailed": "スキーマの検証に失敗しました！"
+        },
+        "labels": {
+            "comment": "コメント",
+            "content": "内容",
+            "cpu": "CPU",
+            "description": "説明",
+            "devMode": "開発者モード",
+            "external": "外部",
+            "internal": "内部",
+            "name": "名前",
+            "none": "なし",
+            "preferences": "設定",
+            "result": "結果",
+            "results": "結果",
+            "selected": "選択済み",
+            "suggestions": "候補",
+            "tokens": "トークン",
+            "version": "バージョン",
+            "model": "モデル",
+            "api": "API"
+        },
+        "messages": {
+            "importingFile": "ファイルをインポート中...",
+            "successfullyImported": "インポートしました！"
+        },
+        "navigation": {
+            "about": "このアプリについて",
+            "settings": "設定"
+        }
+    },
+    "connections": {
+        "add": {
+            "apiKey": "APIキー",
+            "completionUrl": "コンプリーションURL",
+            "createButton": "APIを作成",
+            "defaultFriendlyName": "新しい接続",
+            "error": {
+                "200": "モデルを取得できませんでした：{{error}}",
+                "modelparse": "モデルを解析できませんでした",
+                "modelundef": "モデルの結果が未定義の値になりました",
+                "nonarray": "モデルの結果が配列ではない値になりました。テンプレートの `modelListParser` が間違っている可能性があります"
+            },
+            "firstMessage": "最初のメッセージ",
+            "firstMessageHint": "Claudeに送信されるデフォルトの最初のメッセージ",
+            "friendlyName": "表示名",
+            "fullUrlHint": "注意：完全なURLパスを使用してください",
+            "model": "モデル",
+            "modelUrl": "モデルURL",
+            "prefill": "プリフィル",
+            "prefillHint": "モデルの応答の前に入力しておく内容",
+            "selectConnectionType": "接続の種類を選択",
+            "selectModel": "モデルを選択",
+            "title": "接続を追加"
+        },
+        "connected": "接続済み",
+        "editor": {
+            "apiKey": "APIキー",
+            "completionUrl": "コンプリーションURL",
+            "customFields": "カスタムフィールド",
+            "firstMessage": "最初のメッセージ",
+            "firstMessageHint": "Claudeに送信されるデフォルトの最初のメッセージ",
+            "friendlyName": "表示名",
+            "fullUrlHint": "注意：完全なURLパスを使用してください",
+            "invalidTemplate": "有効なテンプレートを取得できませんでした！",
+            "model": "モデル",
+            "modelUrl": "モデルURL",
+            "prefill": "プリフィル",
+            "prefillHint": "モデルの応答の前に入力しておく内容",
+            "saveButton": "変更を保存",
+            "selectModel": "モデルを選択",
+            "title": "接続を編集"
+        },
+        "failedToConnect": "接続に失敗しました",
+        "item": {
+            "delete": {
+                "button": "接続を削除",
+                "description": "'{{name}}' を削除しますか？この操作は元に戻せません！",
+                "title": "接続を削除"
+            }
+        },
+        "manager": {
+            "add": "接続を追加",
+            "empty": "接続が追加されていません",
+            "header": "接続"
+        },
+        "notConnected": "未接続",
+        "options": {
+            "disableCustomFields": "カスタムフィールドを無効にする",
+            "enableCustomFields": "カスタムフィールドを有効にする",
+            "manageTemplates": "テンプレートを管理"
+        },
+        "templates": {
+            "delete": {
+                "confirm": "テンプレートを削除",
+                "description": "'{{name}}' を削除しますか？",
+                "title": "テンプレートを削除"
+            },
+            "empty": "カスタムテンプレートが追加されていません",
+            "exported": "テンプレートをエクスポートしました",
+            "get": "テンプレートを入手",
+            "import": "テンプレートをインポート",
+            "importError": "インポートに失敗しました：{{error}}",
+            "learn": "テンプレートについて学ぶ",
+            "paste": "テンプレートを貼り付け",
+            "pasteSheetTitle": "ここにテンプレートを貼り付け",
+            "title": "テンプレート管理"
+        }
+    },
+    "contextlimit": {
+        "allocation": "コンテキストの割り当て",
+        "chat": "チャットのコンテキスト",
+        "generated": "生成分",
+        "warning": "チャットのコンテキストが少ないと、メッセージを早く忘れてしまいます"
+    },
+    "db": {
+        "migrationerror": {
+            "description": "この画面が表示されている場合、重大な問題が発生しています。上のログのスクリーンショットを添えて、このエラーを報告してください。",
+            "title": "データベースの移行に失敗しました！"
+        }
+    },
+    "dropdown": {
+        "filter": "絞り込み...",
+        "selectItem": "項目を選択"
+    },
+    "formatting": {
+        "alert": {
+            "deleteConfig": {
+                "cancel": "キャンセル",
+                "confirm": "インストラクトを削除",
+                "description": "'{{name}}' を削除しますか？",
+                "title": "設定を削除"
+            },
+            "regenerateDefaults": {
+                "cancel": "キャンセル",
+                "confirm": "デフォルトのプリセットを再生成",
+                "description": "デフォルトのインストラクトを再生成しますか？",
+                "title": "デフォルトのインストラクトを再生成"
+            }
+        },
+        "autoformatter": {
+            "asteriskActionPlainSpeech": "アスタリスクの動作、そのままのセリフ",
+            "asteriskActionPlainSpeechExample": "*Some action* Some speech",
+            "asteriskActionQuoteSpeech": "アスタリスクの動作、引用符のセリフ",
+            "asteriskActionQuoteSpeechExample": "*Some action* \"Some speech\"",
+            "disabled": "無効",
+            "disabledExample": "*<No Formatting>*",
+            "plainActionQuoteSpeech": "そのままの動作、引用符のセリフ",
+            "plainActionQuoteSpeechExample": "Some action, \"Some speech\""
+        },
+        "configExists": "この設定はすでに存在します",
+        "createConfig": "設定を作成",
+        "defaultName": "デフォルト",
+        "deleteConfig": "設定を削除",
+        "deleteConfigDescription": "'{{name}}' を削除しますか？",
+        "deleteInstruct": "インストラクトを削除",
+        "errors": {
+            "instructDataError": "インストラクトのデータで問題が発生しました"
+        },
+        "exportConfig": "設定をエクスポート",
+        "jsonExtension": ".json",
+        "newPreset": "新しいインストラクトのプリセット",
+        "regenerateDefaultPresets": "デフォルトのプリセットを再生成",
+        "regenerateDefaults": "デフォルトのインストラクトを再生成",
+        "regenerateDefaultsDescription": "デフォルトのインストラクトを再生成しますか？",
+        "sections": {
+            "examples": "例を使用",
+            "hideThinkTags": "思考タグを削除",
+            "inputPrefix": "入力の接頭辞",
+            "inputSuffix": "入力の接尾辞",
+            "lastImageOnly": "最後の画像のみ使用",
+            "lastOutputPrefix": "最後の出力の接頭辞",
+            "names": "名前を含める",
+            "outputPrefix": "出力の接頭辞",
+            "outputSuffix": "出力の接尾辞",
+            "personality": "性格を使用",
+            "scenario": "シナリオを使用",
+            "sendAudio": "音声を送信",
+            "sendDocuments": "ドキュメントを送信",
+            "sendImages": "画像を送信",
+            "stopSequence": "停止シーケンス",
+            "systemPrefix": "システムの接頭辞",
+            "systemPrompt": "システムプロンプト",
+            "systemPromptFormat": "システムプロンプトの書式",
+            "systemSuffix": "システムの接尾辞",
+            "timestamp": "タイムスタンプを追加",
+            "useCommonStopSequences": "一般的な停止シーケンスを使用",
+            "wrap": "改行で囲む"
+        },
+        "selectConfig": "設定を選択",
+        "title": "書式設定",
+        "toast": {
+            "cannotDeleteLastPreset": "最後のインストラクトのプリセットは削除できません。",
+            "configCreated": "設定を作成しました。",
+            "configNameExists": "この設定名はすでに存在します。",
+            "savedToDownloads": "\"{{name}}\" をダウンロードフォルダに保存しました"
+        },
+        "unused": "現在の{{mode}}では使用されません"
+    },
+    "generation": {
+        "errors": {
+            "completionFailed": "コンプリーションに失敗しました。",
+            "configurationNotFound": "設定 \"{{name}}\" が見つかりません",
+            "failedToBuildPayload": "ペイロードの構築に失敗しました",
+            "failedToBuildPrompt": "プロンプトの構築に失敗しました",
+            "failedToOrchestrateRequestBuild": "リクエスト構築の調整に失敗しました",
+            "generationAlreadyInProgress": "すでに生成中です",
+            "generationFailed": "生成に失敗しました",
+            "noActiveAPI": "有効なAPIがありません",
+            "noActiveChat": "有効なチャットがありません",
+            "noCharacter": "読み込まれたキャラクターがありません",
+            "noChatFound": "チャットが見つかりません",
+            "noUser": "読み込まれたユーザーがありません",
+            "payloadConstructionFailed": "ペイロードの構築に失敗しました",
+            "promptConstructionFailed": "プロンプトの構築に失敗しました",
+            "sseFailed": "SSEイベント中にエラーが発生しました"
+        },
+        "warn": {
+            "entryWithoutValidSwipeFound": "有効なスワイプのないエントリーが見つかりました",
+            "noMessagesAddedCheckLogs": "メッセージが追加されませんでした。ログを確認してください。"
+        }
+    },
+    "horizontalSelector": {
+        "description": "セレクターの補足説明（任意）です。",
+        "label": "セレクターのラベル"
+    },
+    "instruct": {
+        "attachments": "添付ファイル",
+        "filteredtext": {
+            "description": "フィルターしたテキストを推論に送信します",
+            "label": "フィルター済みテキストを送信"
+        },
+        "formatting": "インストラクトの書式設定",
+        "hiddentext": {
+            "description": "下で定義した正規表現に一致するテキストを非表示にします。（大文字・小文字は区別しません）",
+            "title": "非表示テキスト"
+        },
+        "localtemplate": {
+            "description": "ローカルモードでは、ChatterUIは読み込んだモデルが提供するインストラクトテンプレートを自動的に使用します。代わりにインストラクトでメッセージを整形したい場合は、これを無効にしてください。ただし、システムプロンプトは常に使用されます。",
+            "label": "ローカルモデル内蔵のテンプレートを使用",
+            "title": "ローカルテンプレート"
+        },
+        "macros": "マクロとキャラクターカード",
+        "textformatter": {
+            "description": "最初のメッセージを下のスタイルに自動で整形します",
+            "title": "テキスト整形"
+        }
+    },
+    "logs": {
+        "alert": {
+            "delete": {
+                "description": "すべてのログを削除しますか？この操作は元に戻せません。",
+                "title": "ログを削除"
+            }
+        },
+        "export": "ログをエクスポート",
+        "flush": "ログを消去",
+        "title": "ログ",
+        "toast": {
+            "downloaderror": "ログをエクスポートできませんでした",
+            "downloadok": "ログをダウンロードしました！"
+        }
+    },
+    "lorebook": {
+        "delete": {
+            "description": "'{{name}}' を削除しますか？\n\nこの操作は元に戻せません。",
+            "title": "ロアブックを削除"
+        },
+        "deleteEntry": {
+            "description": "エントリー '{{name}}' を削除しますか？\n\nこの操作は元に戻せません。",
+            "title": "エントリーを削除"
+        },
+        "empty": "ロアブックが追加されていません",
+        "fields": {
+            "caseSensitive": "大文字・小文字を区別",
+            "constant": "常時有効",
+            "entries": "エントリー",
+            "insertionOrder": "挿入順序",
+            "keys": "キー",
+            "priority": "優先度",
+            "recursiveScanning": "再帰スキャン",
+            "scanDepth": "スキャンの深さ",
+            "secondaryKeys": "セカンダリーキー",
+            "selective": "選択的",
+            "tokenBudget": "トークン予算"
+        },
+        "import": "ロアブックをインポート",
+        "labels": {
+            "generationSettings": "生成設定",
+            "info": "ロアブック情報"
+        },
+        "new": {
+            "entry": "新しいエントリー",
+            "placeholder": "新しいロアブック",
+            "title": "名前を入力"
+        },
+        "preferences": {
+            "afterLast": "最後の後",
+            "afterSystem": "システムの後",
+            "beforeLast": "最後の前",
+            "index": "インデックス",
+            "insertionDepth": "挿入の深さ",
+            "insertionType": "挿入方法"
+        },
+        "title": "ロアブック"
+    },
+    "model": {
+        "alert": {
+            "deletekv": {
+                "description": "KVキャッシュを削除しますか？この操作は元に戻せません。\n\nこれにより {{size}} の空き容量が増えます。",
+                "title": "KVキャッシュを削除"
+            },
+            "deletemodel": {
+                "description": "'{{name}}' を削除しますか？\n\nこの操作は元に戻せません！",
+                "external": "\n\n（外部のモデルファイルは削除されず、この項目のみが削除されます）",
+                "internal": "\n\nこの操作により {{size}} の空き容量が増えます",
+                "title": "モデルを削除"
+            }
+        },
+        "autoload": "チャット時にモデルを自動で読み込む",
+        "backenddev": "バックエンドデバイス",
+        "batch": "バッチ",
+        "contextshift": "コンテキストシフト",
+        "copymodel": "モデルをChatterUIにコピー",
+        "empty": "モデルが見つかりません。インポートしてみましょう！",
+        "externalmodel": "外部モデルを使用",
+        "gpulayers": "GPUレイヤー数",
+        "info": {
+            "hint": "ヒント：<icon /> を押して、GGUFモデルをインポートしましょう！",
+            "loaded": "モデルを読み込みました"
+        },
+        "item": {
+            "contextlength": "コンテキスト長",
+            "file": "ファイル",
+            "invalid": "モデルが無効です",
+            "noparamsize": "パラメーターサイズなし",
+            "rename": "モデル名を変更"
+        },
+        "linkmmproj": "MMPROJをリンク",
+        "magic": "ヘッダー：{{magic}}、16進数：{{hex}}",
+        "maxcontext": "最大コンテキスト",
+        "mmproj": "mmproj",
+        "modelnamechat": "チャットにモデル名を表示",
+        "mtmd": "マルチモーダルアダプター",
+        "purgekv": "KVキャッシュを消去（{{size}}）",
+        "savekv": "ローカルKVを保存",
+        "savekvdesc": "生成のたびにKVキャッシュを保存し、アプリを閉じた後でもセッションを続けられるようにします。正しく動作させるには、同じモデルを使う必要があります。KVキャッシュのファイルは非常に大きくなることがあり、バッテリーの持ちにも悪影響を与える可能性があります！",
+        "selectmmproj": "MMPROJモデルを選択",
+        "settings": {
+            "advanced": "詳細設定",
+            "cpu": "CPU設定",
+            "title": "モデル設定"
+        },
+        "threads": "スレッド数",
+        "title": "モデル",
+        "toast": {
+            "autoLoadingMMPROJ": "MMPROJを自動読み込み中：{{name}}",
+            "autoLoadingModel": "モデルを自動読み込み中：{{name}}",
+            "couldNotLoadModel": "モデルを読み込めませんでした",
+            "deletekv": "KVキャッシュを削除しました！",
+            "failedToGenerateLocally": "ローカルでの生成に失敗しました",
+            "failedToLoadMMPROJ": "MMPROJの読み込みに失敗しました",
+            "failedToRunLocalInference": "ローカル推論の実行に失敗しました",
+            "failedToUnloadMMPROJ": "MMPROJの解除に失敗しました",
+            "failedtolink": "モデルのリンクに失敗しました",
+            "failedtoload": "モデルの読み込みに失敗しました",
+            "mediaAddedWithoutMMPROJModel": "MMPROJモデルなしでメディアが追加されました",
+            "mediaAddedWithoutMultimodalSupport": "マルチモーダル対応なしでメディアが追加されました。",
+            "modelAlreadyLoaded": "モデルはすでに読み込まれています！",
+            "modelDoesNotExist": "モデルが存在しません！",
+            "modelImportedSuccessfully": "モデルをインポートしました！",
+            "modelMissingEntryDeleted": "モデルが見つからないため、この項目を削除します：{{name}}",
+            "noAutoLoadModelSet": "自動読み込みするモデルが設定されていません",
+            "noModelLoaded": "モデルが読み込まれていません",
+            "quantizationNoLongerSupported": "この量子化形式はサポートされなくなりました！"
+        },
+        "unlinkmmproj": "MMPROJのリンクを解除"
+    },
+    "multiDropdown": {
+        "counter_one": "{{count}}件を選択中",
+        "counter_other": "{{count}}件を選択中",
+        "noItemsSelected": "選択された項目がありません"
+    },
+    "navigation": {
+        "about": "このアプリについて",
+        "api": "API",
+        "dataSources": "データソース",
+        "dev_colortest": "[DEV] ColorTest",
+        "dev_components": "[DEV] Components",
+        "dev_markdown": "[DEV] Markdown",
+        "formatting": "書式設定",
+        "logs": "ログ",
+        "lorebooks": "ロアブック",
+        "models": "モデル",
+        "sampler": "サンプラー",
+        "settings": "設定",
+        "tts": "TTS（音声読み上げ）"
+    },
+    "sampler": {
+        "alert": {
+            "delete": {
+                "description": "'{{name}}' を削除しますか？",
+                "title": "サンプラーを削除"
+            }
+        },
+        "create": "サンプラーを作成",
+        "delete": "サンプラーを削除",
+        "empty": "設定できるサンプラーがありません",
+        "export": "サンプラーをエクスポート",
+        "invalid": "無効なサンプラーの項目です！",
+        "new": "新しいサンプラーのプリセット",
+        "noSamplers": "まだAPI接続を追加していない可能性があります",
+        "notSupported": "サンプラーID [{{id}}] はサポートされていません",
+        "title": "サンプラー",
+        "toast": {
+            "emptyname": "サンプラー名を空にすることはできません",
+            "exists": "サンプラー設定 \"{{name}}\" はすでに存在します！",
+            "exportok": "サンプラー設定をエクスポートしました！",
+            "failedToImport": "インポートに失敗しました",
+            "lastconfig": "最後の設定は削除できません"
+        }
+    },
+    "settings": {
+        "character": {
+            "alert": {
+                "regenerateDefaultCard": {
+                    "confirm": "デフォルトカードを作成",
+                    "description": "デフォルトのAIボットのカードを、キャラクター一覧に追加します。",
+                    "title": "デフォルトカードを再生成"
+                }
+            },
+            "errors": {
+                "failedToCreateDefaultCharacter": "デフォルトのキャラクターの作成に失敗しました"
+            },
+            "regenerateDefaultCard": "デフォルトカードを再生成",
+            "title": "キャラクター管理"
+        },
+        "chat": {
+            "askInChatterUI": "ChatterUIで質問",
+            "askInChatterUIDescription": "テキストの操作で、標準のキーボード動作の代わりにChatterUIのプロンプトを使用します。",
+            "autoGenerateTitles": "チャットのタイトルを自動生成",
+            "autoGenerateTitlesDescription": "新しいチャットのタイトルを自動で作成します。",
+            "autoLoadUser": "選択したユーザーを自動で読み込む",
+            "autoLoadUserDescription": "現在のユーザープロフィールを、新しいチャットに自動で読み込みます。",
+            "loadChatOnStartup": "起動時にチャットを読み込む",
+            "loadChatOnStartupDescription": "アプリの起動時に、最後のチャットを自動で開き直します。",
+            "styleButton": "チャットスタイル",
+            "title": "チャット",
+            "useFirstMessage": "最初のメッセージを作成",
+            "useFirstMessageDescription": "新しいチャットを作成するときに、最初のメッセージを追加します。"
+        },
+        "chatstyle": {
+            "fontSize": "文字サイズ",
+            "fontWeight": "文字の太さ",
+            "title": "チャットスタイル"
+        },
+        "chatwindow": {
+            "alternatePositions": "チャットの位置を交互にする",
+            "alternatePositionsDescription": "受信メッセージと送信メッセージの配置を交互にします。",
+            "autoScroll": "自動スクロール",
+            "autoScrollDescription": "最新のメッセージまで自動でスクロールします。",
+            "quickDelete": "クイック削除",
+            "quickDeleteDescription": "素早いスワイプ操作でテキストを削除できるようにします。",
+            "saveScrollPosition": "スクロール位置を保存",
+            "saveScrollPositionDescription": "会話を開き直したときに、前回のチャットの位置を復元します。",
+            "sendOnEnter": "Enterキーで送信",
+            "sendOnEnterDescription": "Enterキーを押したときにメッセージを送信します。",
+            "showTokensPerSecond": "毎秒のトークン数を表示",
+            "showTokensPerSecondDescription": "生成中のトークン処理速度を表示します。",
+            "title": "チャットウィンドウ",
+            "wideChat": "ワイドチャットモード",
+            "wideChatDescription": "チャットウィンドウに幅の広いレイアウトを使用します。"
+        },
+        "colors": {
+            "active": "使用中",
+            "alert": {
+                "deleteTheme": {
+                    "confirm": "テーマを削除",
+                    "description": "'{{name}}' を削除しますか？この操作は元に戻せません！",
+                    "title": "テーマを削除"
+                }
+            },
+            "builtIn": "内蔵",
+            "contextMenu": {
+                "getThemes": "テーマを入手",
+                "importTheme": "テーマをインポート",
+                "pasteTheme": "テーマを貼り付け"
+            },
+            "custom": "カスタム",
+            "error": {
+                "colorNameAlreadyUsed": "この色の名前はすでに使われています",
+                "failedToImport": "インポートに失敗しました：{{error}}"
+            },
+            "pasteThemeTitle": "ここにテーマを貼り付け",
+            "title": "テーマ",
+            "useSystemDarkMode": "システムのダークモードを使用"
+        },
+        "database": {
+            "alert": {
+                "export": {
+                    "confirm": "データベースをエクスポート",
+                    "description": "データベースファイルをエクスポートしますか？\n\nダウンロードフォルダに自動で保存されます",
+                    "title": "データベースをエクスポート"
+                },
+                "import": {
+                    "confirm": "インポート",
+                    "description": "このデータベースをインポートしますか？現在のデータベースが壊れる可能性があります！\n\nバックアップが自動でダウンロードされます。\n\nアプリは自動で再起動します",
+                    "title": "データベースをインポート"
+                },
+                "rerunMigrations": {
+                    "confirm": "移行を再実行",
+                    "description": "移行を再実行すると、データベースが壊れる可能性があります。必ずバックアップをエクスポートしてください。",
+                    "title": "移行を再実行"
+                },
+                "versionMismatch": {
+                    "confirm": "それでもインポート",
+                    "description": "インポートするデータベースファイルのアプリバージョン（{{importedVersion}}）が、インストール済みのバージョン（{{currentVersion}}）と異なります。このデータベースをインポートすると、データベースが壊れる可能性があります。同じバージョンのアプリを使うことをおすすめします。",
+                    "title": "バージョンが異なります"
+                }
+            },
+            "exportButton": "データベースをエクスポート",
+            "importButton": "データベースをインポート",
+            "rerunMigrationsButton": "移行を再実行",
+            "title": "データベース管理",
+            "toast": {
+                "downloadFailed": "データベースのコピーに失敗しました：{{error}}",
+                "downloadOk": "ダウンロードしました！"
+            },
+            "warningText": "警告：インポートするデータベースが、同じバージョンのアプリのものであることを確認してください！"
+        },
+        "generating": {
+            "bypassContextLength": "コンテキスト長を無視",
+            "bypassContextLengthDescription": "プロンプトを作るときに、コンテキスト長の上限を無視します",
+            "printContext": "コンテキストを出力",
+            "printContextDescription": "デバッグ用に、生成時のコンテキストをログに出力します",
+            "title": "生成"
+        },
+        "language": {
+            "title": "言語を設定"
+        },
+        "notification": {
+            "enableNotifications": "通知を有効にする",
+            "enableNotificationsDescription": "アプリがバックグラウンドにあるときに通知を送信します",
+            "playSound": "通知音",
+            "showText": "通知にテキストを表示",
+            "showTextDescription": "生成されたメッセージを通知に表示します",
+            "title": "通知",
+            "vibrate": "通知のバイブレーション"
+        },
+        "screen": {
+            "keepAwake": "画面を消さない",
+            "keepAwakeDescription": "アプリが前面にあるとき、画面を点けたままにします",
+            "title": "画面",
+            "unlockOrientation": "画面の向きの固定を解除",
+            "unlockOrientationDescription": "スマートフォンでも横向きを使えるようにします（アプリの再起動が必要）"
+        },
+        "security": {
+            "lockApp": "アプリをロック",
+            "lockAppDescription": "アプリを開くときにユーザー認証を求めます。端末の画面ロックが設定されていない場合は機能しません。",
+            "title": "セキュリティ"
+        },
+        "style": {
+            "alert": {
+                "deleteBackground": {
+                    "confirm": "背景を削除",
+                    "description": "この背景を削除しますか？この操作は元に戻せません！",
+                    "title": "背景を削除"
+                }
+            },
+            "changeTheme": "テーマを変更",
+            "deleteBackground": "チャットの背景を削除",
+            "importBackground": "チャットの背景をインポート",
+            "messages": {
+                "backgroundDeleted": "背景を削除しました！"
+            },
+            "replaceBackground": "チャットの背景を置き換え",
+            "title": "スタイル"
+        },
+        "tagHider": {
+            "description": "次のタグが付いたキャラクターを、キャラクター一覧から非表示にします。",
+            "label": "非表示にするタグ"
+        },
+        "title": "設定"
+    },
+    "stringArrayEditor": {
+        "add": "追加",
+        "duplicateValueError": "この値はすでに存在します",
+        "emptyValueError": "値を空にすることはできません",
+        "placeholder": "値を入力..."
+    },
+    "tts": {
+        "autoafter": "推論の後に自動で読み上げ",
+        "language": "言語",
+        "live": "推論中に自動で読み上げ",
+        "nospeaker": "話者が選択されていません",
+        "selectlang": "言語を選択",
+        "selectvoice": "音声を選択",
+        "speed": "速度",
+        "test": "これはテスト音声です",
+        "voices": "音声"
+    },
+    "users": {
+        "create": "新しいユーザーを作成",
+        "edit": {
+            "card": {
+                "clone": "ユーザーを複製",
+                "clonedesc": "'{{name}}' を複製しますか？",
+                "delete": "ユーザーを削除",
+                "deletedesc": "'{{name}}' を削除しますか？\nこの操作は元に戻せません。"
+            },
+            "image": {
+                "change": "画像を変更",
+                "delete": "画像を削除",
+                "deletedesc": "この画像を削除しますか？\nこの操作は元に戻せません。",
+                "view": "画像を表示"
+            },
+            "title": "ユーザーを編集"
+        },
+        "hint": "ヒント：左にスワイプするか <icon/> を押して、ユーザーの引き出しメニューを開きます",
+        "messages": {
+            "loadingUser": "ユーザーを読み込み中：{{name}}"
+        },
+        "nameplaceholder": "名前を空にすることはおすすめしません",
+        "profilecount": "ユーザープロフィール"
+    }
+}
