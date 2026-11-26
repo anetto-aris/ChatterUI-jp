@@ -1,0 +1,48 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - master
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Install dependencies and apply patches
+        env:
+          NODE_OPTIONS: "--max-old-space-size=4096"
+        run: npm ci
+
+      - name: Run Android build
+        env:
+          NODE_OPTIONS: "--max-old-space-size=4096"
+          ORG_GRADLE_jvmargs: "-Xmx4g -XX:MaxMetaspaceSize=1g"
+          CI: "true"
+        run: npx expo run:android --no-bundler --variant debug
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: chatterui-android-debug-apk
+          path: |
+            android/app/build/outputs/apk/debug/*.apk
+            android/app/build/outputs/apk/developmentDebug/*.apk
+          if-no-files-found: error
