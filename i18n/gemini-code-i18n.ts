@@ -9,7 +9,7 @@ import { createMMKVStorage } from '@lib/storage/MMKV'
 
 import en from './locales/en.json'
 import id from './locales/id.json'
-import ja from './locales/ja.json'
+import aiJa from './locales/AI - ja.json'
 import ru from './locales/ru.json'
 import zh from './locales/zh.json'
 
@@ -31,7 +31,7 @@ export const supportedLanguages: Language[] = [
     },
     {
         id: 'ja',
-        translation: ja,
+        translation: aiJa,
         label: '日本語',
     },
     {
