@@ -15,14 +15,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
-          cache: npm
+          node-version: "22"
+          cache: "npm"
 
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
-          distribution: temurin
-          java-version: 17
+          distribution: "temurin"
+          java-version: "17"
 
       - name: Install dependencies
         env:
@@ -38,7 +38,8 @@ jobs:
       - name: Build debug APK
         working-directory: android
         env:
-          ORG_GRADLE_jvmargs: "-Xmx4g -XX:MaxMetaspaceSize=1g"
+          GRADLE_OPTS: "-Xmx4g -XX:MaxMetaspaceSize=1g"
+          ORG_GRADLE_PROJECT_org.gradle.jvmargs: "-Xmx4g -XX:MaxMetaspaceSize=1g"
         run: ./gradlew assembleDebug --no-daemon
 
       - name: Upload APK
